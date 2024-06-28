@@ -320,16 +320,32 @@ body.lock {
   .page {
     margin: 105px 0 0 0;
     border-top: 1px solid #DDDDDD;
+    overflow-y: hidden;
   }
 }
 
 .tittle__content {
   padding: 49px 0px 0px 15px;
 }
+.tittle__content h1 {
+  color: #4C5866;
+  margin: 0px 0px 15px 0px;
+}
 @media (max-width: 767.98px) {
   .tittle__content h1 {
-    size: 30px;
+    width: 222px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 30px;
+  }
+}
+.tittle__content p {
+  color: #85859B;
+}
+@media (max-width: 767.98px) {
+  .tittle__content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
   }
 }
