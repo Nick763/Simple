@@ -5,4 +5,11 @@ $(document).ready(function() {
 	});
 });
 
+$(document).ready(function() {
+	$('.search-box__search-btn').click(function(event) {
+		$('.search-box, .search-box__search-btn, .search-box__search-txt').toggleClass('active');
+		$('.header__menu').toggleClass('go-left');
+	});
+});
+
 console.log('hello');

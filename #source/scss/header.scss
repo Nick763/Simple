@@ -11,11 +11,25 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		z-index: 1;
+		background-color: #fff;
 		@media (max-width: $md3) {
-			z-index: 2;
+			z-index: 4;
+		}					
+	}
+	&:after {
+		@media (max-width: $md3) {
+			content: '';
+			position: absolute;
+			top: 45px;
+			left: 0;
+			width: 100%;
+			height: 60px;
+			z-index: 1;
 			background-color: #fff;
-		}				
-	}	
+			border-bottom: 1px solid #DDDDDD	
+		}					
+	}		
 	
 
     &__content {
@@ -37,7 +51,7 @@
 	&__logo {
 		flex: 0 0 140px;
 		position: relative;
-		z-index: 3;
+		z-index: 4;
 		@media (max-width: $md3) {			
 			flex: 0 0 auto;
 		}
@@ -53,7 +67,7 @@
 			width: 30px;
 			height: 20px;
 			flex: 0 0 auto;			
-			z-index: 3;
+			z-index: 4;
 			&:before, &:after {
 				content: '';
 				background-color: #4C5866;
@@ -99,7 +113,14 @@
 	
 
 	&__menu {
-		@media (max-width: $md3) {			
+			z-index: 2;
+			margin: 0px 0px 0px 176px;
+			transition: all 0.4s ease;
+			&.go-left{
+				margin: 0px 0px 0px 0px;
+			}	
+		@media (max-width: $md3) {
+			margin: 0px 0px 0px 0px;
 			padding: 46px 0px 0px 0px;
 			position: fixed;
 			top: -150%;
@@ -107,7 +128,7 @@
 			width: 100%;
 			height: 100%;
 			background-color: #EBEBEB;
-			z-index: 1;
+			z-index: 3;
 			overflow: auto;
 			transition: all 0.4s ease;
 		}
@@ -115,29 +136,20 @@
 			top: 0;
 		}	
 	}
+	
 
 	&__btns {
+		margin: 1px 0px 0px 0px;
 		display: flex;
+		z-index: 2;
 		@media (max-width: $md3) {
 			position: absolute;
 			top: 65px;
 			right: 15px;
 			height: 24px;
-			z-index: 0;						
 		}
 	}
 
-	&__search-btn {
-		flex: 0 0 auto;
-		width: 24px;
-        height: 24px;
-        margin: 0px 0px 0px 60px;
-		@media (max-width: $md3) {
-			width: 24px;
-			height: 24px;
-			margin: 0px 30px 0px 00px;			
-		}
-	}
 
 	&__login-btn {
 		flex: 0 0 auto;
@@ -147,13 +159,63 @@
 		@media (max-width: $md3) {
 			width: 24px;
 			height: 24px;
-			margin: 0px 0px 0px 0px;			
+			margin: 0px 0px 0px 0px;
 		}
 	}
 }
-.menu {
-	display: flex;
 
+.search-box {
+	display: flex;
+	position: relative;	
+	height: 26px;
+	@media (max-width: $md3) {
+		&.active{
+			margin: 0px 10px 0px 0px;
+		}		
+	}		
+
+	&__search-btn {
+		flex: 0 0 auto;
+		width: 24px;
+        height: 24px;
+		margin: 0px 0px 0px 0px;
+		transition: all 0.4s ease;
+		@media (max-width: $md3) {
+			width: 24px;
+			height: 24px;
+			margin: 0px 30px 0px 00px;
+		}
+		&.active{
+			margin: 0px 7px 0px 0px;
+		}	
+	};
+
+	&__search-txt {
+		display: block;
+		width: 0px;
+		border: none;
+		border-bottom: 1px solid #D1D1E5;
+		outline: none;
+		font-size: 20px;
+		color: #4C5866;
+		transition: all 0.4s ease;
+
+		&::placeholder {
+			color: #D1D1E5;
+		}
+		
+		&.active{
+			width: 200px;
+			@media (max-width: $md3) {
+				width: 150px;		
+			}	
+		};
+	}
+}
+
+
+.menu {
+	display: flex;	
     &__list {
         display: flex;
 		@media (max-width: $md3) {

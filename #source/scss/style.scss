@@ -1,14 +1,7 @@
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================
 @import "null.scss";
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
-body {
-    color: #85859B;
-    font-size: 18px;
-    font-family: "Roboto";	
-}
-body.lock {
-	overflow: hidden;
-}
+
 //<ПЕРЕМЕННЫЕ>===============================================
 $minWidth: 320px;
 $maxWidth: 1920;
@@ -38,3 +31,41 @@ $md4: 479.98 + px;
 
 @import "header.scss";
 @import "page.scss";
+
+
+
+body {
+    color: #85859B;
+    font-size: 18px;
+    font-family: "Roboto";
+	input, button, textarea, select{
+		font-family:  "Roboto";
+		font-weight: 400;		
+	}
+	
+	input::-webkit-search-cancel-button{
+		-webkit-appearance: none;
+		height: 16px;
+		width: 16px;
+		background: no-repeat url(/img/vector/escape.svg);
+		&:hover {
+			height: 16px;
+			width: 16px;
+			background: no-repeat url(/img/vector/escape_hover.svg);
+		}
+		&:focus{
+			height: 16px;
+			width: 16px;
+			background: no-repeat url(/img/vector/escape_focus.svg);
+		}
+		&:active{
+			height: 16px;
+			width: 16px;
+			background: no-repeat url(/img/vector/escape_active.svg);
+		}
+	}	
+}
+
+body.lock {
+	overflow: hidden;
+}
