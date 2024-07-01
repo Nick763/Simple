@@ -150,17 +150,26 @@
 		}
 	}
 
-
 	&__login-btn {
-		flex: 0 0 auto;
+		background: no-repeat url(/img/vector/log-in.svg);
+		height: 24px;
 		width: 24px;
-        height: 24px;
+		border: none;
+		flex: 0 0 auto;
 		margin: 0px 0px 0px 30px;
-		@media (max-width: $md3) {
-			width: 24px;
-			height: 24px;
-			margin: 0px 0px 0px 0px;
+		transition: all 0.4s ease;
+		&:hover {			
+			background: no-repeat url(/img/vector/log-in_hover.svg);
 		}
+		&:focus{		
+			background: no-repeat url(/img/vector/log-in_focus.svg);
+		}
+		&:active{		
+			background: no-repeat url(/img/vector/log-in_active.svg);
+		}
+		@media (max-width: $md3) {
+			margin: 0px 0px 0px 0px;
+		}	
 	}
 }
 
@@ -175,14 +184,23 @@
 	}		
 
 	&__search-btn {
-		flex: 0 0 auto;
+		background: no-repeat url(/img/vector/loupe.svg);
+		height: 24px;
 		width: 24px;
-        height: 24px;
+		border: none;
+		flex: 0 0 auto;		
 		margin: 0px 0px 0px 0px;
 		transition: all 0.4s ease;
+		&:hover {			
+			background: no-repeat url(/img/vector/loupe_hover.svg);
+		}
+		&:focus{		
+			background: no-repeat url(/img/vector/loupe_focus.svg);
+		}
+		&:active{		
+			background: no-repeat url(/img/vector/loupe_active.svg);
+		}
 		@media (max-width: $md3) {
-			width: 24px;
-			height: 24px;
 			margin: 0px 30px 0px 00px;
 		}
 		&.active{
@@ -190,28 +208,34 @@
 		}	
 	};
 
-	&__search-txt {
+	&__search-txt {	
 		display: block;
 		width: 0px;
 		border: none;
-		border-bottom: 1px solid #D1D1E5;
 		outline: none;
-		font-size: 20px;
-		color: #4C5866;
+		font-size: 20px;		
 		transition: all 0.4s ease;
-
 		&::placeholder {
 			color: #D1D1E5;
+			opacity: 0;
+			transition: all 0.6s ease;
 		}
 		
 		&.active{
 			width: 200px;
+			border-bottom: 1px solid #D1D1E5;
+			color: #4C5866;
+			&::placeholder {
+				opacity: 100;
+			}	
 			@media (max-width: $md3) {
-				width: 150px;		
+				width: 150px;
 			}	
 		};
 	}
 }
+
+
 
 
 .menu {
@@ -238,6 +262,17 @@
         line-height: 23.44px;
         color: #4C5866;
         text-decoration: none;
+		transition: all 0.4s ease;
+		&:hover {			
+			color: #7875FE;
+		}
+		&:focus{		
+			background-color: #DAD9FB;
+		}
+		&:active{		
+			color: #4946B4;
+		}
+
 		@media (max-width: $md3) {
 			font-size: 18px;
 			line-height: 21.09px;

@@ -29,11 +29,6 @@ $md4: 479.98 + px;
     */
 }
 
-@import "header.scss";
-@import "page.scss";
-
-
-
 body {
     color: #85859B;
     font-size: 18px;
@@ -48,19 +43,13 @@ body {
 		height: 16px;
 		width: 16px;
 		background: no-repeat url(/img/vector/escape.svg);
-		&:hover {
-			height: 16px;
-			width: 16px;
+		&:hover {			
 			background: no-repeat url(/img/vector/escape_hover.svg);
 		}
 		&:focus{
-			height: 16px;
-			width: 16px;
 			background: no-repeat url(/img/vector/escape_focus.svg);
 		}
 		&:active{
-			height: 16px;
-			width: 16px;
 			background: no-repeat url(/img/vector/escape_active.svg);
 		}
 	}	
@@ -69,3 +58,7 @@ body {
 body.lock {
 	overflow: hidden;
 }
+
+
+@import "header.scss";
+@import "page.scss";

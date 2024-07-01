@@ -24,6 +24,32 @@
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 21px;
+			margin: 0px 0px 21px 0px;
+		}
+	}
+
+	.catalog-btn{
+		font-size: 20px;
+		color: #7875FE;
+		background-color: #fff;
+		width: 250px;
+		height: 70px;
+		border: 1px solid #7875FE;
+		&:hover {			
+			color: #fff;
+			background-color: #7875FE;
+		}
+		&:focus{
+			color: #7875FE;		
+			background-color: #DAD9FB;
+		}
+		&:active{		
+			color: #fff;
+			background-color: #4946B4;
+		}
+		@media (max-width: $md3) {
+			width: 144px;
+			height: 50px;
 		}
 	}
 }
