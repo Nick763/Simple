@@ -42,15 +42,15 @@ body {
 		-webkit-appearance: none;
 		height: 16px;
 		width: 16px;
-		background: no-repeat url(/img/vector/escape.svg);
+		background: no-repeat url(../img/vector/escape.svg);
 		&:hover {			
-			background: no-repeat url(/img/vector/escape_hover.svg);
+			background: no-repeat url(../img/vector/escape_hover.svg);
 		}
 		&:focus{
-			background: no-repeat url(/img/vector/escape_focus.svg);
+			background: no-repeat url(../img/vector/escape_focus.svg);
 		}
 		&:active{
-			background: no-repeat url(/img/vector/escape_active.svg);
+			background: no-repeat url(../img/vector/escape_active.svg);
 		}
 	}	
 }

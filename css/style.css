@@ -89,16 +89,16 @@ body input::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 16px;
   width: 16px;
-  background: no-repeat url(/img/vector/escape.svg);
+  background: no-repeat url(../img/vector/escape.svg);
 }
 body input::-webkit-search-cancel-button:hover {
-  background: no-repeat url(/img/vector/escape_hover.svg);
+  background: no-repeat url(../img/vector/escape_hover.svg);
 }
 body input::-webkit-search-cancel-button:focus {
-  background: no-repeat url(/img/vector/escape_focus.svg);
+  background: no-repeat url(../img/vector/escape_focus.svg);
 }
 body input::-webkit-search-cancel-button:active {
-  background: no-repeat url(/img/vector/escape_active.svg);
+  background: no-repeat url(../img/vector/escape_active.svg);
 }
 
 body.lock {
@@ -285,7 +285,7 @@ body.lock {
   }
 }
 .header__login-btn {
-  background: no-repeat url(/img/vector/log-in.svg);
+  background: no-repeat url(../img/vector/log-in.svg);
   height: 24px;
   width: 24px;
   border: none;
@@ -297,13 +297,13 @@ body.lock {
   transition: all 0.4s ease;
 }
 .header__login-btn:hover {
-  background: no-repeat url(/img/vector/log-in_hover.svg);
+  background: no-repeat url(../img/vector/log-in_hover.svg);
 }
 .header__login-btn:focus {
-  background: no-repeat url(/img/vector/log-in_focus.svg);
+  background: no-repeat url(../img/vector/log-in_focus.svg);
 }
 .header__login-btn:active {
-  background: no-repeat url(/img/vector/log-in_active.svg);
+  background: no-repeat url(../img/vector/log-in_active.svg);
 }
 @media (max-width: 767.98px) {
   .header__login-btn {
@@ -324,7 +324,7 @@ body.lock {
   }
 }
 .search-box__search-btn {
-  background: no-repeat url(/img/vector/loupe.svg);
+  background: no-repeat url(../img/vector/loupe.svg);
   height: 24px;
   width: 24px;
   border: none;
@@ -336,13 +336,13 @@ body.lock {
   transition: all 0.4s ease;
 }
 .search-box__search-btn:hover {
-  background: no-repeat url(/img/vector/loupe_hover.svg);
+  background: no-repeat url(../img/vector/loupe_hover.svg);
 }
 .search-box__search-btn:focus {
-  background: no-repeat url(/img/vector/loupe_focus.svg);
+  background: no-repeat url(../img/vector/loupe_focus.svg);
 }
 .search-box__search-btn:active {
-  background: no-repeat url(/img/vector/loupe_active.svg);
+  background: no-repeat url(../img/vector/loupe_active.svg);
 }
 @media (max-width: 767.98px) {
   .search-box__search-btn {

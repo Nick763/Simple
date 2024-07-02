@@ -151,7 +151,7 @@
 	}
 
 	&__login-btn {
-		background: no-repeat url(/img/vector/log-in.svg);
+		background: no-repeat url(../img/vector/log-in.svg);
 		height: 24px;
 		width: 24px;
 		border: none;
@@ -159,13 +159,13 @@
 		margin: 0px 0px 0px 30px;
 		transition: all 0.4s ease;
 		&:hover {			
-			background: no-repeat url(/img/vector/log-in_hover.svg);
+			background: no-repeat url(../img/vector/log-in_hover.svg);
 		}
 		&:focus{		
-			background: no-repeat url(/img/vector/log-in_focus.svg);
+			background: no-repeat url(../img/vector/log-in_focus.svg);
 		}
 		&:active{		
-			background: no-repeat url(/img/vector/log-in_active.svg);
+			background: no-repeat url(../img/vector/log-in_active.svg);
 		}
 		@media (max-width: $md3) {
 			margin: 0px 0px 0px 0px;
@@ -184,7 +184,7 @@
 	}		
 
 	&__search-btn {
-		background: no-repeat url(/img/vector/loupe.svg);
+		background: no-repeat url(../img/vector/loupe.svg);
 		height: 24px;
 		width: 24px;
 		border: none;
@@ -192,13 +192,13 @@
 		margin: 0px 0px 0px 0px;
 		transition: all 0.4s ease;
 		&:hover {			
-			background: no-repeat url(/img/vector/loupe_hover.svg);
+			background: no-repeat url(../img/vector/loupe_hover.svg);
 		}
 		&:focus{		
-			background: no-repeat url(/img/vector/loupe_focus.svg);
+			background: no-repeat url(../img/vector/loupe_focus.svg);
 		}
 		&:active{		
-			background: no-repeat url(/img/vector/loupe_active.svg);
+			background: no-repeat url(../img/vector/loupe_active.svg);
 		}
 		@media (max-width: $md3) {
 			margin: 0px 30px 0px 00px;
