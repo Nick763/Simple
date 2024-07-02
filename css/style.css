@@ -59,7 +59,7 @@ body, html {
 }
 
 /*----------------------------------------------------------*/
-._container {
+.container {
   max-width: 1110px;
   margin: 0 auto;
   /*
@@ -473,33 +473,48 @@ body.lock {
 .page {
   margin: 105px 0px 0px 0px;
 }
-.tittle__content {
-  padding: 49px 0px 0px 15px;
+.simple-things__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.tittle__content h1 {
+
+.simple-things__content {
+  padding: 49px 0px 0px 15px;
+  width: 446px;
+  margin: 0px 125px 0px 0px;
+}
+.simple-things__content h1 {
   color: #4C5866;
   margin: 0px 0px 15px 0px;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0px 0px 30px 0px;
 }
 @media (max-width: 767.98px) {
-  .tittle__content h1 {
+  .simple-things__content h1 {
     width: 222px;
     font-size: 30px;
-    font-weight: 400;
     line-height: 30px;
+    margin: 0px 0px 0px 0px;
   }
 }
-.tittle__content p {
+.simple-things__content p {
   color: #85859B;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0px 0px 30px 0px;
 }
 @media (max-width: 767.98px) {
-  .tittle__content p {
+  .simple-things__content p {
     font-size: 14px;
-    font-weight: 400;
     line-height: 21px;
     margin: 0px 0px 21px 0px;
   }
 }
-.tittle__content .catalog-btn {
+.simple-things__content .btn {
   font-size: 20px;
   color: #7875FE;
   background-color: #fff;
@@ -507,21 +522,26 @@ body.lock {
   height: 70px;
   border: 1px solid #7875FE;
 }
-.tittle__content .catalog-btn:hover {
+.simple-things__content .btn:hover {
   color: #fff;
   background-color: #7875FE;
 }
-.tittle__content .catalog-btn:focus {
+.simple-things__content .btn:focus {
   color: #7875FE;
   background-color: #DAD9FB;
 }
-.tittle__content .catalog-btn:active {
+.simple-things__content .btn:active {
   color: #fff;
   background-color: #4946B4;
 }
 @media (max-width: 767.98px) {
-  .tittle__content .catalog-btn {
+  .simple-things__content .btn {
     width: 144px;
     height: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .simple-things__content .simple-things__image {
+    display: none;
   }
 }
