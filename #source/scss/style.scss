@@ -7,8 +7,8 @@ $minWidth: 320px;
 $maxWidth: 1920;
 $maxWidthContainer: 1110;
 $md1: $maxWidthContainer + 12 + px;
-$md2: 991.98 + px;
-$md3: 767.98 + px;
+$md2: 690.98 + px;
+$md3: 510.98 + px;
 $md4: 479.98 + px;
 
 //<ОСНОВНАЯ СЕТКА>===========================================
@@ -59,6 +59,86 @@ body.lock {
 	overflow: hidden;
 }
 
-
 @import "header.scss";
-@import "page.scss";
+
+.page{	
+    margin: 140px 0px 0px 0px;
+	@media (max-width: $md4) {
+		margin: 105px 0px 0px 0px;
+	}
+}
+
+.simple-things {
+
+	&__container {
+		display: flex;
+	}
+
+	&__content {
+		padding: 70px 0px 0px 0px;
+		width: 446px;
+		margin: 0px 125px 0px 0px;
+		@media (max-width: $md4) {
+			margin: 0px 0px 0px 0px;
+			padding: 49px 0px 0px 15px;
+		} 	
+		h1 {
+			color: #4C5866;
+			margin: 0px 0px 15px 0px;
+			font-size: 60px;
+			font-weight: 400;
+			line-height: 60px;
+			margin: 0px 0px 30px 0px;	
+			@media (max-width: $md4) {
+				width: 222px;
+				font-size: 30px;			
+				line-height: 30px;
+				margin: 0px 0px 15px 0px;
+			}
+		}	
+		p {
+			color: #85859B;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 27px;
+			margin: 0px 0px 32px 0px;			
+			@media (max-width: $md4) {
+				font-size: 14px;			
+				line-height: 21px;
+				margin: 0px 0px 21px 0px;
+			}
+		}
+	}
+
+	&__image {
+		display: block;
+		@media (max-width: $md4) {
+			display: none;
+		}
+	}
+}
+
+.btn {
+	font-size: 20px;
+	color: #7875FE;
+	background-color: #fff;
+	width: 254px;
+	height: 70px;
+	border: 1px solid #7875FE;
+	&:hover {			
+		color: #fff;
+		background-color: #7875FE;
+	}
+	&:focus{
+		color: #7875FE;		
+		background-color: #DAD9FB;
+	}
+	&:active{		
+		color: #fff;
+		background-color: #4946B4;
+	}
+	@media (max-width: $md4) {
+		width: 144px;
+		height: 50px;
+	}
+}
