@@ -122,12 +122,12 @@ body.lock {
   z-index: 1;
   background-color: #fff;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .header:before {
     z-index: 4;
   }
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .header:after {
     content: "";
     position: absolute;
@@ -141,7 +141,7 @@ body.lock {
   }
 }
 .header__content {
-  height: 80px;
+  height: 79px;
   padding: 10px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -156,17 +156,31 @@ body.lock {
   padding: 0 6px;
   position: relative;
 }
-@media (max-width: 510.98px) {
+@media (max-width: 880.98px) {
   .header__content {
+    padding: 0px 41px 0px 33px;
     height: 44px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
-@media (max-width: 479.98px) {
+@media (max-width: 690.98px) {
+  .header__content {
+    padding: 0px 33px 0px 33px;
+    height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (max-width: 510.98px) {
   .header__content {
     height: 44px;
     display: -webkit-box;
@@ -182,18 +196,36 @@ body.lock {
           flex: 0 0 140px;
   position: relative;
   z-index: 4;
+  margin: 0px 0px 0px 0px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 880.98px) {
   .header__logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
+    margin: -1px 0px 0px 0px;
+  }
+}
+@media (max-width: 690.98px) {
+  .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin: 0px 0px 1px 0px;
+  }
+}
+@media (max-width: 510.98px) {
+  .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin: 0px 0px 0px 0px;
   }
 }
 .header__burger {
   display: none;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .header__burger {
     position: absolute;
     top: 65px;
@@ -253,21 +285,35 @@ body.lock {
 }
 .header__menu {
   z-index: 2;
-  margin: 0px 0px 0px 176px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .header__menu.go-left {
   margin: 0px 0px 0px 0px;
 }
-@media (max-width: 510.98px) {
+@media (max-width: 880.98px) {
   .header__menu {
     position: fixed;
     top: 63px;
-    left: auto;
+    left: 35px;
   }
 }
-@media (max-width: 479.98px) {
+@media (max-width: 690.98px) {
+  .header__menu {
+    position: fixed;
+    top: 63px;
+  }
+}
+@media (max-width: 510.98px) {
   .header__menu {
     margin: 0px 0px 0px 0px;
     padding: 46px 0px 0px 0px;
@@ -287,13 +333,13 @@ body.lock {
   top: 0;
 }
 .header__btns {
-  margin: 5px 0px 0px 0px;
+  margin: 5px 0px 0px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 2;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .header__btns {
     margin: 0px 0px 0px 0px;
     position: absolute;
@@ -323,7 +369,7 @@ body.lock {
 .header__login-btn:active {
   background: no-repeat url(../img/vector/log-in_active.svg);
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .header__login-btn {
     margin: 0px 0px 0px 0px;
   }
@@ -336,7 +382,7 @@ body.lock {
   position: relative;
   height: 26px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .search-box.active {
     margin: 0px 10px 0px 0px;
   }
@@ -362,7 +408,7 @@ body.lock {
 .search-box__search-btn:active {
   background: no-repeat url(../img/vector/loupe_active.svg);
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .search-box__search-btn {
     margin: 0px 30px 0px 0px;
   }
@@ -429,7 +475,7 @@ body.lock {
 .search-box__search-txt.active::placeholder {
   opacity: 100;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .search-box__search-txt.active {
     width: 150px;
   }
@@ -445,7 +491,7 @@ body.lock {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .menu__list {
     display: block;
     margin: 65px 0px 0px 0px;
@@ -458,7 +504,17 @@ body.lock {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 880.98px) {
+  .menu__list li {
+    margin: 0px 111px 0px 0px;
+  }
+}
+@media (max-width: 690.98px) {
+  .menu__list li {
+    margin: 0px 0px 0px 51px;
+  }
+}
+@media (max-width: 510.98px) {
   .menu__list li {
     margin: 0px 0px 50px 15px;
   }
@@ -481,7 +537,7 @@ body.lock {
 .menu__link:active {
   color: #4946B4;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .menu__link {
     font-size: 18px;
     line-height: 21.09px;
@@ -491,7 +547,7 @@ body.lock {
 .page {
   margin: 140px 0px 0px 0px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .page {
     margin: 105px 0px 0px 0px;
   }
@@ -507,7 +563,7 @@ body.lock {
   width: 446px;
   margin: 0px 125px 0px 0px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .simple-things__content {
     margin: 0px 0px 0px 0px;
     padding: 49px 0px 0px 15px;
@@ -521,7 +577,7 @@ body.lock {
   line-height: 60px;
   margin: 0px 0px 30px 0px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .simple-things__content h1 {
     width: 222px;
     font-size: 30px;
@@ -536,7 +592,7 @@ body.lock {
   line-height: 27px;
   margin: 0px 0px 32px 0px;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .simple-things__content p {
     font-size: 14px;
     line-height: 21px;
@@ -546,7 +602,7 @@ body.lock {
 .simple-things__image {
   display: block;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .simple-things__image {
     display: none;
   }
@@ -572,7 +628,7 @@ body.lock {
   color: #fff;
   background-color: #4946B4;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 510.98px) {
   .btn {
     width: 144px;
     height: 50px;
