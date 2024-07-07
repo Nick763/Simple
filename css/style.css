@@ -731,20 +731,20 @@ body.lock {
 }
 .simple-things__image {
   display: block;
-  background: no-repeat url("img/made-from-paper.jpg");
+  background: no-repeat url("../img/made-from-paper.jpg");
   width: 540px;
   height: 540px;
 }
 @media (max-width: 780.98px) {
   .simple-things__image {
-    background: no-repeat url("img/made-from-paper-md2.jpg");
+    background: no-repeat url("../img/made-from-paper-md2.jpg");
     width: 270px;
     height: 410px;
   }
 }
 @media (max-width: 588.98px) {
   .simple-things__image {
-    background: no-repeat url("img/made-from-paper-md3.jpg");
+    background: no-repeat url("../img/made-from-paper-md3.jpg");
     width: 195px;
     height: 396px;
   }

@@ -142,16 +142,16 @@ body.lock {
 
 	&__image {
 		display: block;		
-		background: no-repeat url("img/made-from-paper.jpg");
+		background: no-repeat url("../img/made-from-paper.jpg");
 		width: 540px;
 		height: 540px;
 		@media (max-width: $md2) {
-			background: no-repeat url("img/made-from-paper-md2.jpg");
+			background: no-repeat url("../img/made-from-paper-md2.jpg");
 			width: 270px;
 			height: 410px;
 		}
 		@media (max-width: $md3) {
-			background: no-repeat url("img/made-from-paper-md3.jpg");
+			background: no-repeat url("../img/made-from-paper-md3.jpg");
 			width: 195px;
 			height: 396px;
 		}
