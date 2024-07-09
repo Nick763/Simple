@@ -9,7 +9,7 @@ $maxWidthContainer: 1122;
 $md1: $maxWidthContainer + 12 + px;
 $md2: 987 + px;
 $md3: 744 + px;
-$md4: 550 + px;
+$md4: 515 + px;
 
 //<ОСНОВНАЯ СЕТКА>===========================================
 .container {
@@ -17,10 +17,10 @@ $md4: 550 + px;
     margin: 0px auto;
 
     @media (max-width: $md2) {
-		margin: 0px 27px;
+		margin: 0px 42px;
     }
     @media (max-width: $md3) {
-		margin: 0px 27px;
+		margin: 0px 33px;
     }
 	@media (max-width: $md4) {
 		margin: 0px 15px;
@@ -80,19 +80,17 @@ body.lock {
 		padding: 0 6px;
 		@media (max-width: $md2) {
 			justify-content: space-between;
-			padding: 0px 34px 0px 6px;
-			margin: 0px 19px;
+			padding: 0;
+			margin: 0px 39px;
 		}
 		@media (max-width: $md3) {
-			justify-content: space-between;
-			padding: 0px 20px 0px 6px;
-			margin: 0px 19px;
-		}
-		@media (max-width: $md3) {
-			display: flex;
 			justify-content: space-around;
+			margin: 0px 17px;
+		}
+		@media (max-width: $md4) {
+			justify-content: space-between;
 			padding: 0px 6px;
-			margin: 0px 19px;
+			margin: 0px 8px;
 		}
 	}
 

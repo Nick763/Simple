@@ -65,15 +65,15 @@ body, html {
 }
 @media (max-width: 987px) {
   .container {
-    margin: 0px 27px;
+    margin: 0px 42px;
   }
 }
 @media (max-width: 744px) {
   .container {
-    margin: 0px 27px;
+    margin: 0px 33px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .container {
     margin: 0px 15px;
   }
@@ -125,7 +125,7 @@ body.lock {
   z-index: 1;
   background-color: #fff;
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .header:before {
     z-index: 4;
   }
@@ -156,7 +156,7 @@ body.lock {
     border-bottom: 1px solid #DDDDDD;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .header:after {
     content: "";
     position: absolute;
@@ -205,9 +205,9 @@ body.lock {
             justify-content: space-between;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .header__content {
-    padding: 0px 0px 0px 10px;
+    padding: 0;
     height: 44px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -230,7 +230,7 @@ body.lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    margin: -2px 0px 0px -2px;
+    margin: -2px 0px 0px -3px;
   }
 }
 @media (max-width: 744px) {
@@ -241,7 +241,7 @@ body.lock {
     margin: 0px 0px 1px 0px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .header__logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -252,11 +252,11 @@ body.lock {
 .header__burger {
   display: none;
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .header__burger {
     position: absolute;
     top: 65px;
-    left: 15px;
+    left: 5px;
     display: block;
     width: 20px;
     height: 18px;
@@ -294,7 +294,7 @@ body.lock {
 }
 .header__burger.active {
   width: 24px;
-  left: 18px;
+  left: 2px;
   /*background-color: #EBEBEB;
   box-shadow: 0px 0px 8px 13px rgb(235, 235, 235);
   border-radius: 20px;*/
@@ -322,15 +322,15 @@ body.lock {
 }
 @media (max-width: 987px) {
   .header__btns {
-    margin: 4px 22px 0px 0px;
+    margin: 4px -7px 0px 0px;
   }
 }
 @media (max-width: 744px) {
   .header__btns {
-    margin: 4px 12px 0px 0px;
+    margin: 5px 0px 0px 0px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .header__btns {
     margin: 0px 0px 0px 0px;
     position: absolute;
@@ -360,7 +360,7 @@ body.lock {
 .header__login-btn:active {
   background: no-repeat url(../img/vector/log-in_active.svg);
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .header__login-btn {
     margin: 0px 0px 0px 0px;
   }
@@ -373,7 +373,7 @@ body.lock {
   position: relative;
   height: 26px;
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .search-box.active {
     margin: 0px 10px 0px 0px;
   }
@@ -399,7 +399,7 @@ body.lock {
 .search-box__search-btn:active {
   background: no-repeat url(../img/vector/loupe_active.svg);
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .search-box__search-btn {
     margin: 0px 30px 0px 0px;
   }
@@ -466,7 +466,7 @@ body.lock {
 .search-box__search-txt.active::placeholder {
   opacity: 100;
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .search-box__search-txt.active {
     width: 150px;
   }
@@ -500,7 +500,7 @@ body.lock {
     top: 63px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .menu {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -550,7 +550,7 @@ body.lock {
             justify-content: space-between;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .menu__list {
     display: block;
     margin: 65px 0px 0px 0px;
@@ -575,9 +575,9 @@ body.lock {
     margin: 0px 0px 0px 0px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .menu__list li {
-    margin: 0px 0px 50px 30px;
+    margin: 0px 0px 50px 14px;
   }
 }
 @media (min-width: 987px) {
@@ -603,7 +603,7 @@ body.lock {
 .menu__link:active {
   color: #4946B4;
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .menu__link {
     font-size: 18px;
     line-height: 21.09px;
@@ -623,7 +623,7 @@ body.lock {
     margin: 124px 0px 0px 0px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .page {
     margin: 105px 0px 0px 0px;
   }
@@ -643,28 +643,24 @@ body.lock {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0px 34px 0px 6px;
-    margin: 0px 19px;
+    padding: 0;
+    margin: 0px 39px;
   }
 }
 @media (max-width: 744px) {
+  .simple-things__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0px 17px;
+  }
+}
+@media (max-width: 515px) {
   .simple-things__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0px 20px 0px 6px;
-    margin: 0px 19px;
-  }
-}
-@media (max-width: 744px) {
-  .simple-things__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     padding: 0px 6px;
-    margin: 0px 19px;
+    margin: 0px 8px;
   }
 }
 .simple-things__content {
@@ -685,7 +681,7 @@ body.lock {
     padding: 40px 0px 0px 0px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .simple-things__content {
     margin: 0px 0px 0px 0px;
     padding: 49px 0px 0px 0px;
@@ -715,7 +711,7 @@ body.lock {
     margin: 0px 0px 20px 0px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .simple-things__content h1 {
     width: 222px;
     font-size: 30px;
@@ -738,7 +734,7 @@ body.lock {
     margin: 0px 0px 20px 0px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .simple-things__content p {
     font-size: 14px;
     line-height: 21px;
@@ -765,7 +761,7 @@ body.lock {
     height: 396px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .simple-things__image {
     display: none;
   }
@@ -797,7 +793,7 @@ body.lock {
     height: 60px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 515px) {
   .btn {
     font-size: 18px;
     width: 144px;
