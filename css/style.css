@@ -207,13 +207,14 @@ body.lock {
 }
 @media (max-width: 550px) {
   .header__content {
-    padding: 0;
+    padding: 0px 0px 0px 10px;
     height: 44px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .header__logo {
@@ -229,7 +230,7 @@ body.lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    margin: -1px 0px 0px 0px;
+    margin: -2px 0px 0px -2px;
   }
 }
 @media (max-width: 744px) {
@@ -255,7 +256,7 @@ body.lock {
   .header__burger {
     position: absolute;
     top: 65px;
-    left: 20px;
+    left: 15px;
     display: block;
     width: 20px;
     height: 18px;
@@ -294,10 +295,9 @@ body.lock {
 .header__burger.active {
   width: 24px;
   left: 18px;
-  background-color: #EBEBEB;
-  -webkit-box-shadow: 0px 0px 8px 13px rgb(235, 235, 235);
-          box-shadow: 0px 0px 8px 13px rgb(235, 235, 235);
-  border-radius: 20px;
+  /*background-color: #EBEBEB;
+  box-shadow: 0px 0px 8px 13px rgb(235, 235, 235);
+  border-radius: 20px;*/
 }
 .header__burger.active:before {
   -webkit-transform: rotate(45deg);
@@ -313,54 +313,6 @@ body.lock {
   -webkit-transform: scale(0);
           transform: scale(0);
 }
-.header__menu {
-  z-index: 2;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-@media (max-width: 987px) {
-  .header__menu {
-    position: fixed;
-    top: 63px;
-  }
-}
-@media (max-width: 744px) {
-  .header__menu {
-    position: fixed;
-    top: 63px;
-  }
-}
-@media (max-width: 550px) {
-  .header__menu {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    margin: 0px 0px 0px 0px;
-    padding: 46px 0px 0px 0px;
-    position: fixed;
-    top: -150%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #EBEBEB;
-    z-index: 3;
-    overflow: auto;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-}
-.header__menu.active {
-  top: 0;
-}
 .header__btns {
   margin: 5px 0px 0px 60px;
   display: -webkit-box;
@@ -370,12 +322,12 @@ body.lock {
 }
 @media (max-width: 987px) {
   .header__btns {
-    margin: 0px 0px 0px 0px;
+    margin: 4px 22px 0px 0px;
   }
 }
 @media (max-width: 744px) {
   .header__btns {
-    margin: 0px 0px 0px 0px;
+    margin: 4px 12px 0px 0px;
   }
 }
 @media (max-width: 550px) {
@@ -521,24 +473,54 @@ body.lock {
 }
 
 .menu {
+  z-index: 2;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 @media (max-width: 987px) {
   .menu {
     width: 89.5%;
+    position: fixed;
+    top: 63px;
   }
 }
 @media (max-width: 744px) {
   .menu {
-    width: 88%;
+    width: 88.5%;
+    position: fixed;
+    top: 63px;
   }
 }
 @media (max-width: 550px) {
   .menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0px 0px 0px 0px;
+    padding: 46px 0px 0px 0px;
+    position: fixed;
+    top: -150%;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-color: #EBEBEB;
+    z-index: 3;
+    overflow: auto;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
   }
+}
+.menu.active {
+  top: 0;
 }
 .menu__body {
   width: 100%;
@@ -595,7 +577,7 @@ body.lock {
 }
 @media (max-width: 550px) {
   .menu__list li {
-    margin: 0px 0px 50px 15px;
+    margin: 0px 0px 50px 30px;
   }
 }
 @media (min-width: 987px) {
@@ -661,15 +643,28 @@ body.lock {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 34px 0px 6px;
+    margin: 0px 19px;
   }
 }
-@media (max-width: 987px) {
+@media (max-width: 744px) {
   .simple-things__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0px 20px 0px 6px;
+    margin: 0px 19px;
+  }
+}
+@media (max-width: 744px) {
+  .simple-things__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 0px 6px;
+    margin: 0px 19px;
   }
 }
 .simple-things__content {
@@ -679,6 +674,7 @@ body.lock {
 }
 @media (max-width: 987px) {
   .simple-things__content {
+    max-width: 390px;
     margin: 0px 0px 0px 0px;
     padding: 6px 0px 0px 0px;
   }
@@ -753,7 +749,7 @@ body.lock {
   display: block;
   background: no-repeat url("../img/made-from-paper.jpg");
   width: 540px;
-  height: 540px;
+  height: 560px;
 }
 @media (max-width: 987px) {
   .simple-things__image {
@@ -803,6 +799,7 @@ body.lock {
 }
 @media (max-width: 550px) {
   .btn {
+    font-size: 18px;
     width: 144px;
     height: 50px;
   }

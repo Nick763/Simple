@@ -80,11 +80,19 @@ body.lock {
 		padding: 0 6px;
 		@media (max-width: $md2) {
 			justify-content: space-between;
-			padding: 0px 0px 0px 0px;
+			padding: 0px 34px 0px 6px;
+			margin: 0px 19px;
 		}
-		@media (max-width: $md2) {
+		@media (max-width: $md3) {
 			justify-content: space-between;
+			padding: 0px 20px 0px 6px;
+			margin: 0px 19px;
+		}
+		@media (max-width: $md3) {
+			display: flex;
+			justify-content: space-around;
 			padding: 0px 6px;
+			margin: 0px 19px;
 		}
 	}
 
@@ -93,6 +101,7 @@ body.lock {
 		max-width: 446px;
 		margin: 0px 0px 0px 0px;
 		@media (max-width: $md2) {
+			max-width: 390px;
 			margin: 0px 0px 0px 0px;
 			padding: 6px 0px 0px 0px;
 		} 	
@@ -154,7 +163,7 @@ body.lock {
 		display: block;		
 		background: no-repeat url("../img/made-from-paper.jpg");
 		width: 540px;
-		height: 540px;
+		height: 560px;
 		@media (max-width: $md2) {
 			background: no-repeat url("../img/made-from-paper-md2.jpg");
 			width: 270px;
@@ -195,6 +204,7 @@ body.lock {
 		height: 60px;
 	}
 	@media (max-width: $md4) {
+		font-size: 18px;
 		width: 144px;
 		height: 50px;
 	}
