@@ -582,7 +582,7 @@ body.lock {
 }
 @media (min-width: 987px) {
   .menu__list li.go-left {
-    margin: 0px 0px 0px 15px;
+    margin: 0px 0px 0px 35px;
   }
 }
 .menu__link {
@@ -736,6 +736,8 @@ body.lock {
 }
 @media (max-width: 515px) {
   .simple-things__content p {
+    width: auto;
+    min-width: 287px;
     font-size: 14px;
     line-height: 21px;
     margin: 0px 0px 21px 0px;

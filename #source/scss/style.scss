@@ -150,6 +150,8 @@ body.lock {
 				margin: 0px 0px 20px 0px;
 			}			
 			@media (max-width: $md4) {
+				width: auto;
+				min-width: 287px;
 				font-size: 14px;			
 				line-height: 21px;
 				margin: 0px 0px 21px 0px;
