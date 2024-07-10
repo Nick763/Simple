@@ -3,7 +3,8 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	border-bottom: 1px solid #DDDDDD;	
+	border-bottom: 1px solid #DDDDDD;
+	z-index: 1;	
 	&:before {
 		content: '';
 		position: absolute;

@@ -32,6 +32,22 @@ body {
     color: #85859B;
     font-size: 18px;
     font-family: "Roboto";
+
+	p {
+		color: #85859B;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 27px;
+		@media (max-width: $md3) {
+			font-size: 16px;
+			line-height: 24px;
+		}			
+		@media (max-width: $md4) {
+			font-size: 14px;
+			line-height: 21px;
+		}
+	}
+
 	input, button, textarea, select{
 		font-family:  "Roboto";
 		font-weight: 400;		
@@ -138,41 +154,37 @@ body.lock {
 			}
 		}	
 		p {
-			color: #85859B;
-			font-size: 18px;
-			font-weight: 400;
-			line-height: 27px;
 			margin: 0px 0px 32px 0px;
 			@media (max-width: $md3) {
 				width: 287px;
-				font-size: 16px;			
-				line-height: 24px;
 				margin: 0px 0px 20px 0px;
 			}			
 			@media (max-width: $md4) {
 				width: auto;
 				min-width: 287px;
-				font-size: 14px;			
-				line-height: 21px;
 				margin: 0px 0px 21px 0px;
 			}
 		}
 	}
 
 	&__image {
+		background: no-repeat url("../img/made-from-paper.png");
 		display: block;		
-		background: no-repeat url("../img/made-from-paper.jpg");
 		width: 540px;
 		height: 560px;
+		background-position: -18px -1px;
+		background-size: 180%;
 		@media (max-width: $md2) {
-			background: no-repeat url("../img/made-from-paper-md2.jpg");
 			width: 270px;
 			height: 410px;
+			background-position: -9px 0px;
+			background-size: 180%;
 		}
 		@media (max-width: $md3) {
-			background: no-repeat url("../img/made-from-paper-md3.jpg");
 			width: 195px;
 			height: 396px;
+			background-position: -8px -1px;
+			background-size: 180%;
 		}
 		@media (max-width: $md4) {
 			display: none;
@@ -209,3 +221,74 @@ body.lock {
 		height: 50px;
 	}
 }
+
+.examples {	
+	background-color: #EBEBEB;
+
+	&__container {
+		padding: 90px 6px;
+		
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__card {
+		z-index: 0;
+		display: flex;
+		width: 350px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			top: -20px;
+			left: 0;
+			width: 100%;
+			border-bottom: 1px solid #DDDDDD;	
+		}
+	}
+
+	&__main-card {
+		display: flex;
+		padding: 90px 0px 0px 0px;
+	}
+
+	&__image {
+		width: 160px;
+		height: 118px;
+		margin: 0px 30px 0px 0px;
+	}
+
+	&__text {
+		h2{
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 27px;
+		}
+	}
+
+	&__text-main {
+		margin: 59px 0px 0px 30px;
+		flex: 0 1 350px;
+		h2{
+			font-size: 40px;
+			font-weight: 400;
+			line-height: 40px;
+			margin: 0px 0px 20px 0px;
+		}
+		p{
+			line-height: 30.6px;
+		}
+		:last-child{
+			margin-top: 10px;
+		}
+	}
+
+	&__image-main {
+		width: 730px;
+		height: 564px;
+	}
+}
+

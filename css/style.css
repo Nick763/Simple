@@ -84,6 +84,24 @@ body {
   font-size: 18px;
   font-family: "Roboto";
 }
+body p {
+  color: #85859B;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+@media (max-width: 744px) {
+  body p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 515px) {
+  body p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 body input, body button, body textarea, body select {
   font-family: "Roboto";
   font-weight: 400;
@@ -114,6 +132,7 @@ body.lock {
   top: 0;
   left: 0;
   border-bottom: 1px solid #DDDDDD;
+  z-index: 1;
 }
 .header:before {
   content: "";
@@ -720,17 +739,11 @@ body.lock {
   }
 }
 .simple-things__content p {
-  color: #85859B;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
   margin: 0px 0px 32px 0px;
 }
 @media (max-width: 744px) {
   .simple-things__content p {
     width: 287px;
-    font-size: 16px;
-    line-height: 24px;
     margin: 0px 0px 20px 0px;
   }
 }
@@ -738,29 +751,31 @@ body.lock {
   .simple-things__content p {
     width: auto;
     min-width: 287px;
-    font-size: 14px;
-    line-height: 21px;
     margin: 0px 0px 21px 0px;
   }
 }
 .simple-things__image {
+  background: no-repeat url("../img/made-from-paper.png");
   display: block;
-  background: no-repeat url("../img/made-from-paper.jpg");
   width: 540px;
   height: 560px;
+  background-position: -18px -1px;
+  background-size: 180%;
 }
 @media (max-width: 987px) {
   .simple-things__image {
-    background: no-repeat url("../img/made-from-paper-md2.jpg");
     width: 270px;
     height: 410px;
+    background-position: -9px 0px;
+    background-size: 180%;
   }
 }
 @media (max-width: 744px) {
   .simple-things__image {
-    background: no-repeat url("../img/made-from-paper-md3.jpg");
     width: 195px;
     height: 396px;
+    background-position: -8px -1px;
+    background-size: 180%;
   }
 }
 @media (max-width: 515px) {
@@ -801,4 +816,73 @@ body.lock {
     width: 144px;
     height: 50px;
   }
+}
+
+.examples {
+  background-color: #EBEBEB;
+}
+.examples__container {
+  padding: 90px 6px;
+}
+.examples__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.examples__card {
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  position: relative;
+}
+.examples__card::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD;
+}
+.examples__main-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 90px 0px 0px 0px;
+}
+.examples__image {
+  width: 160px;
+  height: 118px;
+  margin: 0px 30px 0px 0px;
+}
+.examples__text h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.examples__text-main {
+  margin: 59px 0px 0px 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 350px;
+          flex: 0 1 350px;
+}
+.examples__text-main h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0px 0px 20px 0px;
+}
+.examples__text-main p {
+  line-height: 30.6px;
+}
+.examples__text-main :last-child {
+  margin-top: 10px;
+}
+.examples__image-main {
+  width: 730px;
+  height: 564px;
 }
