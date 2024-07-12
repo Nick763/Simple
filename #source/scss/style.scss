@@ -13,8 +13,7 @@ $md4: 515 + px;
 
 //<ОСНОВНАЯ СЕТКА>===========================================
 .container {
-    max-width: $maxWidthContainer + px;
-	min-width: 320px;
+    max-width: $maxWidthContainer + px;	
     margin: 0px auto;	
 
     @media (max-width: $md2) {
@@ -413,4 +412,69 @@ body.lock {
 		}
 	}
 }
+
+.products {
+
+	&__container {
+		padding: 90px 6px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__card {		
+		width: 256px;
+		@media (max-width: $md2) {
+			width: calc((100% - 20px) / 2);
+		}
+	}
+
+	&__image {
+	}
+
+	&__text {
+		padding: 20px 0px;
+		display: flex;
+		flex-direction: column;
+		h2{			
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 35.16px;
+		}
+		p{
+			line-height: 30.6px;
+		}
+	}
+
+	&__edition {
+		padding: 8px 0px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16.41px;
+	}
+
+	&__link {
+		width: 136px;
+		height: 23px;
+	}
+
+	&__details {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: no-repeat url(../img/vector/details.svg);
+		transition: all 0.4s ease;
+		&:hover {			
+			background: no-repeat url(/img/vector/details_hover.svg);
+		}
+		&:focus{		
+			background: no-repeat url(../img/vector/details_focus.svg);
+		}
+		&:active{		
+			background: no-repeat url(../img/vector/details_active.svg);
+		}
+	}
+}
+
+
 
