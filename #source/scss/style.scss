@@ -429,6 +429,7 @@ body.lock {
 			margin: 0 33px;
 		}
 		@media (max-width: $md4) {
+			padding: 60px 0px 0px 0px;
 			margin: 0 9px;
 			flex-direction: column;
 			justify-content: baseline;
@@ -587,9 +588,11 @@ body.lock {
 			flex-wrap: wrap;
 		}
 		@media (max-width: $md4) {
+			display: block;
+			margin: 0px 0px 0px 15px;
 			padding: 60px 0px 60px 0px;
-			flex-wrap: nowrap;
-			overflow: hidden;
+			overflow-y: hidden;
+			white-space: nowrap;
 		}
 	}
 
@@ -608,6 +611,8 @@ body.lock {
 		@media (max-width: $md4) {
 			width: 150px;
 			height: 80px;
+			margin: 0px 26px 0px 0px;
+			display: inline-block
 		}
 	}
 }

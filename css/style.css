@@ -1129,6 +1129,7 @@ body.lock {
 }
 @media (max-width: 545px) {
   .products__container {
+    padding: 60px 0px 0px 0px;
     margin: 0 9px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1343,10 +1344,11 @@ body.lock {
 }
 @media (max-width: 545px) {
   .brands__container {
+    display: block;
+    margin: 0px 0px 0px 15px;
     padding: 60px 0px 60px 0px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    overflow: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
   }
 }
 .brands__logo {
@@ -1370,5 +1372,7 @@ body.lock {
   .brands__logo {
     width: 150px;
     height: 80px;
+    margin: 0px 26px 0px 0px;
+    display: inline-block;
   }
 }
