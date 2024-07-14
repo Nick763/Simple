@@ -9,7 +9,7 @@ $maxWidthContainer: 1122;
 $md1: $maxWidthContainer + 12 + px;
 $md2: 1032 + px;
 $md3: 744 + px;
-$md4: 515 + px;
+$md4: 545 + px;
 
 //<ОСНОВНАЯ СЕТКА>===========================================
 .container {
@@ -421,31 +421,32 @@ body.lock {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		@media (max-width: $md2) {
-			padding: 60px 6px;
+			padding: 60px 6px 0px 6px;
 			margin: 0 33px;
 		}
 		@media (max-width: $md3) {
-			padding: 60px 6px;
-			margin: 0 26px;
+			padding: 60px 0px 20px 0px;
+			margin: 0 33px;
 		}
 		@media (max-width: $md4) {
 			margin: 0 9px;
 			flex-direction: column;
 			justify-content: baseline;
+			align-items: center;
 		}
 	}
 
 	&__card {		
 		width: 255px;
 		@media (max-width: $md2) {
-			padding: 0px 0px 63px 0px;
+			padding: 0px 0px 61px 0px;
 			width: 330px;
 		}
 		@media (max-width: $md3) {
-			padding: 0px 0px 38px 0px;
+			padding: 0px 0px 40px 0px;
 			width: 240px;
 		}
-		@media (max-width: $md3) {
+		@media (max-width: $md4) {
 			padding: 0px 0px 60px 0px;
 			width: 290px;
 		}
@@ -465,7 +466,7 @@ body.lock {
 			width: 240px;
 			height: 180px;
 		}
-		@media (max-width: $md3) {
+		@media (max-width: $md4) {
 			width: 290px;
 			height: 180px;
 		}
@@ -497,9 +498,15 @@ body.lock {
 	}
 
 	&__text {
-		padding: 20px 0px;
+		padding: 20px 0px 19px 0px;
 		display: flex;
 		flex-direction: column;
+		@media (max-width: $md2) {
+			padding: 21px 0px 18px 0px;
+		}
+		@media (max-width: $md3) {
+			padding: 21px 0px 18px 0px;
+		}
 		@media (max-width: $md4) {
 			padding: 20px 0px 27px 0px;
 		}
@@ -518,22 +525,32 @@ body.lock {
 				font-size: 16px;
 				line-height: 27.2px;
 			}
+			@media (max-width: $md4) {
+				font-size: 16px;
+				line-height: 27.2px;
+			}
 		}
 	}
 
 	&__edition {
-		padding: 8px 0px;
+		padding: 9px 0px;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 16.41px;
 		@media (max-width: $md3) {
-			padding: 5px 0px 8px 0px;
+			padding: 6px 0px;
+		}
+		@media (max-width: $md4) {
+			padding: 6px 0px;
 		}
 	}
 
 	&__link {
 		width: 136px;
 		height: 23px;
+		@media (max-width: $md4) {
+			margin: -5px 0px 2px 0px;
+		}
 	}
 
 	&__details {
@@ -553,6 +570,49 @@ body.lock {
 		}
 	}
 }
+
+.brands {
+	background-color: #EBEBEB;
+	&__container {
+		padding: 90px 0px 90px 0px;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $md2) {
+			margin: 0px 39px;
+			padding: 60px 0px 60px 0px;
+		}
+		@media (max-width: $md3) {
+			margin: 0px 33px;
+			padding: 60px 0px 30px 0px;
+			flex-wrap: wrap;
+		}
+		@media (max-width: $md4) {
+			padding: 60px 0px 60px 0px;
+			flex-wrap: nowrap;
+			overflow: hidden;
+		}
+	}
+
+	&__logo {
+		width: 255px;
+		height: 135px;
+		@media (max-width: $md2) {
+			width: 150px;
+			height: 80px;
+		}
+		@media (max-width: $md3) {
+			width: 240px;
+			height: 127px;
+			margin: 0px 0px 30px 0px;
+		}
+		@media (max-width: $md4) {
+			width: 150px;
+			height: 80px;
+		}
+	}
+}
+
+
 
 
 
