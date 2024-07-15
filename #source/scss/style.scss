@@ -575,7 +575,7 @@ body.lock {
 .brands {
 	background-color: #EBEBEB;
 	&__container {
-		padding: 90px 0px 90px 0px;
+		padding: 90px 7px 90px 5px;
 		display: flex;
 		justify-content: space-between;
 		@media (max-width: $md2) {
@@ -589,8 +589,8 @@ body.lock {
 		}
 		@media (max-width: $md4) {
 			display: block;
-			margin: 0px 0px 0px 15px;
-			padding: 60px 0px 60px 0px;
+			margin: 0px 0px 0px 0px;
+			padding: 60px 0px 60px 15px;
 			overflow-y: hidden;
 			white-space: nowrap;
 		}
@@ -617,7 +617,102 @@ body.lock {
 	}
 }
 
+.scratchbook {
 
+	&__container {
+		padding: 90px 8px 0px 5px;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $md2) {
+			overflow: hidden;
+			margin: 0px 0px 0px 39px;
+			padding: 35px 0px 60px 0px;
+		}
+		@media (max-width: $md3) {
+			flex-direction: column-reverse;
+			align-items: center;
+			margin: 0px 0px 0px 0px;
+			padding: 60px 0px 60px 0px;
+		}
+	}
 
+	&__content {
+		padding: 25px 0px 0px 0px;
+		width: 350px;
+		@media (max-width: $md2) {
+			width: 330px;
+		}
+		@media (max-width: $md3) {
+			padding: 10px 0px 0px 0px;
+			width: 510px;
+		}
+		@media (max-width: $md3) {
+			padding: 10px 0px 0px 0px;
+			width: 289px;
+		}
+		h2{
+			color: #666666;
+			font-size: 40px;
+			font-weight: 400;
+			line-height: 40px;
+			@media (max-width: $md2) {
+				font-size: 30px;
+				line-height: 30px;
+			}
+			@media (max-width: $md3) {
+				font-size: 24px;
+				line-height: 24px;
+			}
+			@media (max-width: $md4) {
+				font-size: 24px;
+				line-height: 24px;
+			}
+		}
+		p{
+			margin: 9px 0px 30px 0px;
+			line-height: 30.6px;
+			@media (max-width: $md2) {
+				margin: 21px 0px 30px 0px;
+			}
+			@media (max-width: $md3) {
+				margin: 20px 0px 29px 0px;
+				font-size: 16px;
+				line-height: 27.2px;
+			}
+		}
+	}
 
+	.scratchbook-btn {
+		@media (max-width: $md3) {
+			width: 196px;
+			height: 60px;
+		}
+		@media (max-width: $md3) {
+			width: 144px;
+			height: 50px;
+		}
+	}
 
+	&__image {
+		width: 730px;
+		@media (max-width: $md2) {
+			display: block;
+			width: 449px;
+			padding: 25px 0px 0px 0px;
+			margin: 0px -80px 0px 0px;
+		}
+		@media (max-width: $md3) {
+			width: 449px;
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: $md4) {
+			width: 290px;
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 0px 0px;
+		}
+		img{
+			width: 100%;
+		}
+	}	
+}
