@@ -1378,6 +1378,7 @@ body.lock {
 }
 
 .scratchbook__container {
+  margin-bottom: -146px;
   padding: 90px 8px 0px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1389,12 +1390,13 @@ body.lock {
 @media (max-width: 1032px) {
   .scratchbook__container {
     overflow: hidden;
-    margin: 0px 0px 0px 39px;
-    padding: 35px 0px 60px 0px;
+    margin: 0px 0px -8px 39px;
+    padding: 35px 0px 0px 0px;
   }
 }
 @media (max-width: 744px) {
   .scratchbook__container {
+    min-width: 320px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1421,7 +1423,7 @@ body.lock {
     width: 510px;
   }
 }
-@media (max-width: 744px) {
+@media (max-width: 545px) {
   .scratchbook__content {
     padding: 10px 0px 0px 0px;
     width: 289px;
@@ -1452,12 +1454,12 @@ body.lock {
   }
 }
 .scratchbook__content p {
-  margin: 9px 0px 30px 0px;
+  margin: 9px 0px 26px 0px;
   line-height: 30.6px;
 }
 @media (max-width: 1032px) {
   .scratchbook__content p {
-    margin: 21px 0px 30px 0px;
+    margin: 21px 0px 25px 0px;
   }
 }
 @media (max-width: 744px) {
@@ -1466,6 +1468,11 @@ body.lock {
     font-size: 16px;
     line-height: 27.2px;
   }
+}
+.scratchbook__content sup {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
 }
 @media (max-width: 744px) {
   .scratchbook .scratchbook-btn {
@@ -1506,4 +1513,55 @@ body.lock {
 }
 .scratchbook__image img {
   width: 100%;
+}
+
+.footer {
+  position: relative;
+  z-index: 2;
+  background-color: #4C5866;
+}
+.footer__content {
+  width: 100%;
+  height: 80px;
+  padding: 0px 7px 0px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+@media (max-width: 1032px) {
+  .footer__content {
+    padding: 0px 39px;
+  }
+}
+.footer__social-media-links {
+  padding: 0 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 186px;
+}
+.footer__line {
+  width: 100%;
+  height: 21px;
+  margin: 0 auto;
+  padding: 3px 0px 0px 0px;
+  background-color: #EBEBEB;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  text-align: center;
+}
+.footer__line span {
+  color: #85859B;
 }
