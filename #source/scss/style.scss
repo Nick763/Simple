@@ -620,13 +620,12 @@ body.lock {
 .scratchbook {
 
 	&__container {
-		margin-bottom: -146px;
-		padding: 90px 8px 0px 5px;
+		padding: 90px 8px 0px 6px;
 		display: flex;
 		justify-content: space-between;
 		@media (max-width: $md2) {
 			overflow: hidden;
-			margin: 0px 0px -8px 39px;
+			margin: 0px 0px 25px 39px;
 			padding: 35px 0px 0px 0px;
 		}
 		@media (max-width: $md3) {
@@ -634,18 +633,20 @@ body.lock {
 			flex-direction: column-reverse;
 			align-items: center;
 			margin: 0px 0px 0px 0px;
-			padding: 60px 0px 60px 0px;
+			padding: 60px 0px 18px 0px;
 		}
 	}
 
 	&__content {
 		padding: 25px 0px 0px 0px;
 		width: 350px;
+		height: 275px;
 		@media (max-width: $md2) {
 			width: 330px;
+			height: 275px;
 		}
 		@media (max-width: $md3) {
-			padding: 10px 0px 0px 0px;
+			padding: 18px 0px 0px 0px;
 			width: 510px;
 		}
 		@media (max-width: $md4) {
@@ -677,7 +678,7 @@ body.lock {
 				margin: 21px 0px 25px 0px;
 			}
 			@media (max-width: $md3) {
-				margin: 20px 0px 29px 0px;
+				margin: 15px 0px 29px 0px;
 				font-size: 16px;
 				line-height: 27.2px;
 			}
@@ -694,7 +695,7 @@ body.lock {
 			width: 196px;
 			height: 60px;
 		}
-		@media (max-width: $md3) {
+		@media (max-width: $md4) {
 			width: 144px;
 			height: 50px;
 		}
@@ -702,9 +703,12 @@ body.lock {
 
 	&__image {
 		width: 730px;
+		height: 410px;
+		overflow: hidden;
 		@media (max-width: $md2) {
 			display: block;
 			width: 449px;
+			height: 334px;
 			padding: 25px 0px 0px 0px;
 			margin: 0px -80px 0px 0px;
 		}

@@ -13,6 +13,9 @@
 		@media (max-width: $md2) {
 			padding: 0px 39px;
 		}
+		@media (max-width: $md3) {
+			padding: 0px 33px;
+		}
 	}
 
 	&__logo {
@@ -23,6 +26,9 @@
 		display: flex;
 		justify-content: space-between;
 		width: 186px;
+		@media (max-width: $md3) {
+			padding: 0px 2px 0px 0px;
+		}
 	}
 
 	&__line {
