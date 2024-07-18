@@ -534,15 +534,15 @@ body.lock {
 	}
 
 	&__edition {
-		padding: 9px 0px;
+		margin: 9px 0px;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 16.41px;
 		@media (max-width: $md3) {
-			padding: 6px 0px;
+			margin: 6px 0px;
 		}
 		@media (max-width: $md4) {
-			padding: 6px 0px;
+			margin: 6px 0px;
 		}
 	}
 
@@ -574,6 +574,9 @@ body.lock {
 
 .brands {
 	background-color: #EBEBEB;
+	@media (max-width: $md4) {
+		min-width: 320px;
+	}
 	&__container {
 		padding: 90px 7px 90px 5px;
 		display: flex;
@@ -625,7 +628,7 @@ body.lock {
 		justify-content: space-between;
 		@media (max-width: $md2) {
 			overflow: hidden;
-			margin: 0px 0px 25px 39px;
+			margin: 0px 0px 0px 39px;
 			padding: 35px 0px 0px 0px;
 		}
 		@media (max-width: $md3) {
@@ -650,7 +653,7 @@ body.lock {
 			width: 510px;
 		}
 		@media (max-width: $md4) {
-			padding: 10px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
 			width: 289px;
 		}
 		h2{
@@ -678,7 +681,12 @@ body.lock {
 				margin: 21px 0px 25px 0px;
 			}
 			@media (max-width: $md3) {
-				margin: 15px 0px 29px 0px;
+				margin: 15px 0px 28px 0px;
+				font-size: 16px;
+				line-height: 27.2px;
+			}
+			@media (max-width: $md4) {
+				margin: 21px 0px 24px 0px;
 				font-size: 16px;
 				line-height: 27.2px;
 			}
@@ -709,17 +717,15 @@ body.lock {
 			display: block;
 			width: 449px;
 			height: 334px;
-			padding: 25px 0px 0px 0px;
-			margin: 0px -80px 0px 0px;
+			margin: 25px -80px 0px 0px;
 		}
 		@media (max-width: $md3) {
 			width: 449px;
-			padding: 0px 0px 0px 0px;
 			margin: 0px 0px 0px 0px;
 		}
 		@media (max-width: $md4) {
 			width: 290px;
-			padding: 0px 0px 0px 0px;
+			height: 219px;
 			margin: 0px 0px 0px 0px;
 		}
 		img{

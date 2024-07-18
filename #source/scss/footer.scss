@@ -2,6 +2,9 @@
 	position: relative;
 	z-index: 2;	
 	background-color: #4C5866;
+	@media (max-width: $md4) {
+		min-width: 320px;
+	}
 	&__content {		
 		width: 100%;
 		height: 80px;
@@ -16,9 +19,26 @@
 		@media (max-width: $md3) {
 			padding: 0px 33px;
 		}
+		@media (max-width: $md4) {
+			flex-direction: column;
+			justify-content: space-around;
+			height: 127px;
+			padding: 0px 33px;
+		}
 	}
 
 	&__logo {
+		@media (max-width: $md4) {
+			position: relative;
+			&::after{
+				content: '';
+				position: absolute;
+				bottom: -19px;
+				left: -75px;
+				width: 290px;
+				border-bottom: 1px solid #DDDDDD;	
+			}
+		}
 	}
 
 	&__social-media-links {
