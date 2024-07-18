@@ -1307,7 +1307,7 @@ body.lock {
   transition: all 0.4s ease;
 }
 .products__details:hover {
-  background: no-repeat url(/img/vector/details_hover.svg);
+  background: no-repeat url(../img/vector/details_hover.svg);
 }
 .products__details:focus {
   background: no-repeat url(../img/vector/details_focus.svg);
